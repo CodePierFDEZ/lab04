@@ -13,16 +13,16 @@ fun MovieCard(title: String, description: String) {
     Card(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(12.dp), // <-- aumentamos padding
+            .padding(12.dp),
         colors = CardDefaults.cardColors(
-            containerColor = MaterialTheme.colorScheme.primaryContainer // <-- nuevo color
+            containerColor = MaterialTheme.colorScheme.primaryContainer
         ),
-        elevation = CardDefaults.cardElevation(8.dp) // <-- aumentamos elevación
+        elevation = CardDefaults.cardElevation(8.dp)
     ) {
         Column(modifier = Modifier.padding(20.dp)) {
             Text(
-                text = title,
-                style = MaterialTheme.typography.headlineSmall, // <-- estilo más grande
+                text = "Versión MAIN del componente", // 🔹 Texto modificado en MAIN
+                style = MaterialTheme.typography.headlineSmall,
                 color = MaterialTheme.colorScheme.onPrimaryContainer
             )
             Spacer(modifier = Modifier.height(10.dp))
@@ -34,6 +34,7 @@ fun MovieCard(title: String, description: String) {
         }
     }
 }
+
 
 
 @Composable
