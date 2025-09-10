@@ -37,3 +37,19 @@ fun SearchBar() {
             .padding(8.dp)
     )
 }
+
+
+@Composable
+fun MovieList(movies: List<String>) {
+    LazyColumn(modifier = Modifier.fillMaxSize()) {
+        items(movies) { movie ->
+            Text(
+                text = movie,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(8.dp)
+            )
+            Divider()
+        }
+    }
+}
