@@ -21,7 +21,7 @@ fun MovieCard(title: String, description: String) {
     ) {
         Column(modifier = Modifier.padding(20.dp)) {
             Text(
-                text = "Versión MAIN del componente", // 🔹 Texto modificado en MAIN
+                text = "Versión BRANCH del componente", // 🔹 Texto modificado en BRANCH
                 style = MaterialTheme.typography.headlineSmall,
                 color = MaterialTheme.colorScheme.onPrimaryContainer
             )
@@ -34,6 +34,7 @@ fun MovieCard(title: String, description: String) {
         }
     }
 }
+
 
 
 
