@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "MovieCounter"
+rootProject.name = "lab04"
 include(":app")
  
