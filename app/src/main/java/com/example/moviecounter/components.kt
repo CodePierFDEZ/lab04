@@ -21,7 +21,7 @@ fun MovieCard(title: String, description: String) {
     ) {
         Column(modifier = Modifier.padding(20.dp)) {
             Text(
-                text = "Cambio desde MAIN", // 🔹 Texto modificado en BRANCH
+                text = "Versión FINAL después del conflicto", // ✅ Resolución manual
                 style = MaterialTheme.typography.headlineSmall,
                 color = MaterialTheme.colorScheme.onPrimaryContainer
             )
@@ -34,9 +34,6 @@ fun MovieCard(title: String, description: String) {
         }
     }
 }
-
-
-
 
 @Composable
 fun SearchBar() {
@@ -51,7 +48,6 @@ fun SearchBar() {
             .padding(8.dp)
     )
 }
-
 
 @Composable
 fun MovieList(movies: List<String>) {
